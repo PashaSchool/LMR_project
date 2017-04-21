@@ -103,7 +103,8 @@ div.item-person__wrapper.mer-mista {
 
 .mer-mista .item-person__name {
   font-size: 1.5em;
-  color: #0a1c27; }
+  color: #0a1c27;
+  font-weight: 600; }
 
 .mer-mista .item-person__position-in-lmr {
   font-size: 1em;
@@ -168,7 +169,7 @@ li.item-person.posadovci {
         margin-left: -3%;
         border-radius: 30px;
         left: 0;
-        background-color: #dd5b6c;
+        background-color: #508ebf;
         opacity: .4;
         position: absolute;
         bottom: 1px;
@@ -191,7 +192,7 @@ li.item-person.posadovci {
   .lmr-persona:hover {
     cursor: default; }
   .lmr-persona:hover .lmr-persona__rm-btn {
-    background-color: #950020;
+    background-color: #203f54;
     cursor: pointer; }
   .lmr-persona:hover .lmr-persona__rm-btn > span.text {
     transform: translateX(-0.8rem); }
@@ -239,7 +240,8 @@ li.item-person.posadovci {
     font-size: 1rem;
     display: block;
     padding: 0.25rem 0;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    font-weight: 600; }
     @media screen and (max-width: 960px) {
       .lmr-persona__name {
         text-align: center;
@@ -260,12 +262,15 @@ li.item-person.posadovci {
     margin: .25rem 0;
     height: 1.75rem;
     border: 1px solid #caced1;
-    background-color: #dd5b6c;
+    background-color: #508ebf;
     color: #fbfbfd;
     padding: 0 1.2rem;
     transition: all .3s linear;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px; }
     @media screen and (max-width: 960px) {
       .lmr-persona__rm-btn {
         width: 90%;
@@ -298,7 +303,7 @@ li.item-person.posadovci {
 .sidebar {
   width: 25%;
   padding: 30px;
-  background-color: #efafb8;
+  background-color: #9bbeda;
   color: #fbfbfd;
   height: 100%;
   display: block;

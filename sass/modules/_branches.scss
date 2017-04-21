@@ -83,6 +83,7 @@ div.item-person__wrapper.mer-mista {
 .mer-mista .item-person__name {
     font-size: 1.5em;
     color: $black;
+    font-weight: 600;
 }
 
 .mer-mista .item-person__position-in-lmr {
@@ -254,6 +255,7 @@ li.item-person.posadovci {
         display: block;
         padding: 0.25rem 0;
         margin-right: 3rem;
+        font-weight: 600;
         @media screen and (max-width: 960px) {
             text-align: center;
             margin-right: 0;
@@ -282,6 +284,9 @@ li.item-person.posadovci {
         transition: all .3s linear;
         display: flex;
         align-items: center;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 1px;
         @media screen and (max-width: 960px) {
             width: 90%;
             margin-left: 5%;
