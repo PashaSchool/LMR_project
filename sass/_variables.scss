@@ -1,0 +1,18 @@
+//font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,800');
+//colors
+$black: #0a1c27;
+$light_black: lighten($black,
+.3);
+$silver: #caced1;
+$white: #fbfbfd;
+$red: #950020;
+$pink: #dd5b6c;
+//font
+$mainFont:'Open Sans',
+sans-serif;
+//breakpoint
+$large: 1170px;
+$medium: 970px;
+$small: 750px;
+$x-small: 0px;
