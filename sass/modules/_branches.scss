@@ -210,6 +210,9 @@ li.item-person.posadovci {
         cursor: pointer;
         margin-right: 2rem;
     }
+    &:hover .lmr-persona__name {
+        padding: .5rem 0 0 0;
+    }
     &:after {
         content: '';
         width: 90%;
@@ -256,6 +259,7 @@ li.item-person.posadovci {
         padding: 0.25rem 0;
         margin-right: 3rem;
         font-weight: 600;
+        transition: padding .3s;
         @media screen and (max-width: 960px) {
             text-align: center;
             margin-right: 0;

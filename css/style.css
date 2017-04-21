@@ -203,6 +203,8 @@ li.item-person.posadovci {
     color: #0a1c27;
     cursor: pointer;
     margin-right: 2rem; }
+  .lmr-persona:hover .lmr-persona__name {
+    padding: .5rem 0 0 0; }
   .lmr-persona:after {
     content: '';
     width: 90%;
@@ -241,7 +243,8 @@ li.item-person.posadovci {
     display: block;
     padding: 0.25rem 0;
     margin-right: 3rem;
-    font-weight: 600; }
+    font-weight: 600;
+    transition: padding .3s; }
     @media screen and (max-width: 960px) {
       .lmr-persona__name {
         text-align: center;
