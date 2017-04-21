@@ -268,7 +268,9 @@ li.item-person.posadovci {
 
 .sidebar {
   width: 25%;
-  background-color: green;
+  padding: 30px;
+  background-color: #efafb8;
+  color: #fbfbfd;
   height: 100%;
   display: block;
   position: fixed;
