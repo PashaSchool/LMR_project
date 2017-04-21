@@ -142,6 +142,9 @@ li.item-person.posadovci {
         display: flex;
         width: 100%;
         flex-wrap: wrap;
+        @media screen and (max-width: 960px) {
+            padding-top: 10%;
+        }
     }
     &__name {
         // display: block;
@@ -184,6 +187,9 @@ li.item-person.posadovci {
     display: flex;
     width: 50%;
     position: relative;
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+    }
     &:hover {
         cursor: default;
     }
@@ -216,10 +222,22 @@ li.item-person.posadovci {
     &__photo {
         width: 25%;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 960px) {
+            width: 100%;
+            order: -1;
+            // height: 100%;
+        }
         img {
-            @include center;
             max-width: 85%;
             border-radius: 50%;
+            @media screen and (max-width: 960px) {
+                max-width: 50%;
+                // order: -1;
+                // height: 100%;
+            }
         }
     }
     &__des {
@@ -227,12 +245,19 @@ li.item-person.posadovci {
         padding: 1%;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 960px) {
+            width: 100%;
+        }
     }
     &__name {
         font-size: 1rem;
         display: block;
         padding: 0.25rem 0;
         margin-right: 3rem;
+        @media screen and (max-width: 960px) {
+            text-align: center;
+            margin-right: 0;
+        }
     }
     &__position {
         display: block;
@@ -240,6 +265,10 @@ li.item-person.posadovci {
         margin-right: 2rem;
         color: darken($silver, 40);
         margin-bottom: 2.2rem;
+        @media screen and (max-width: 960px) {
+            text-align: center;
+            margin-right: 0;
+        }
     }
     &__rm-btn {
         position: absolute;
@@ -253,11 +282,19 @@ li.item-person.posadovci {
         transition: all .3s linear;
         display: flex;
         align-items: center;
+        @media screen and (max-width: 960px) {
+            width: 90%;
+            margin-left: 5%;
+            padding: 1rem;
+        }
         &>span.text {
             font-size: .8rem;
             color: $white;
             transition: all .2s ease-in-out;
             display: block;
+            @media screen and (max-width: 960px) {
+                text-align: center;
+            }
         }
         &>span.arrow {
             opacity: 0;

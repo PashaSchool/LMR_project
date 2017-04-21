@@ -149,6 +149,9 @@ li.item-person.posadovci {
     display: flex;
     width: 100%;
     flex-wrap: wrap; }
+    @media screen and (max-width: 960px) {
+      .staff-container__wrapper {
+        padding-top: 10%; } }
   .staff-container__name {
     font-size: 1rem; }
     .staff-container__name > h2 {
@@ -182,6 +185,9 @@ li.item-person.posadovci {
   display: flex;
   width: 50%;
   position: relative; }
+  @media screen and (max-width: 960px) {
+    .lmr-persona {
+      flex-direction: column; } }
   .lmr-persona:hover {
     cursor: default; }
   .lmr-persona:hover .lmr-persona__rm-btn {
@@ -207,32 +213,47 @@ li.item-person.posadovci {
     position: absolute; }
   .lmr-persona__photo {
     width: 25%;
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 960px) {
+      .lmr-persona__photo {
+        width: 100%;
+        order: -1; } }
     .lmr-persona__photo img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
       max-width: 85%;
       border-radius: 50%; }
+      @media screen and (max-width: 960px) {
+        .lmr-persona__photo img {
+          max-width: 50%; } }
   .lmr-persona__des {
     width: 75%;
     padding: 1%;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 960px) {
+      .lmr-persona__des {
+        width: 100%; } }
   .lmr-persona__name {
     font-size: 1rem;
     display: block;
     padding: 0.25rem 0;
     margin-right: 3rem; }
+    @media screen and (max-width: 960px) {
+      .lmr-persona__name {
+        text-align: center;
+        margin-right: 0; } }
   .lmr-persona__position {
     display: block;
     font-size: .7rem;
     margin-right: 2rem;
     color: #60696f;
     margin-bottom: 2.2rem; }
+    @media screen and (max-width: 960px) {
+      .lmr-persona__position {
+        text-align: center;
+        margin-right: 0; } }
   .lmr-persona__rm-btn {
     position: absolute;
     bottom: 0;
@@ -245,11 +266,19 @@ li.item-person.posadovci {
     transition: all .3s linear;
     display: flex;
     align-items: center; }
+    @media screen and (max-width: 960px) {
+      .lmr-persona__rm-btn {
+        width: 90%;
+        margin-left: 5%;
+        padding: 1rem; } }
     .lmr-persona__rm-btn > span.text {
       font-size: .8rem;
       color: #fbfbfd;
       transition: all .2s ease-in-out;
       display: block; }
+      @media screen and (max-width: 960px) {
+        .lmr-persona__rm-btn > span.text {
+          text-align: center; } }
     .lmr-persona__rm-btn > span.arrow {
       opacity: 0;
       position: absolute;
